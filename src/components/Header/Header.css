@@ -1,0 +1,22 @@
+.header-div{
+    background-color: antiquewhite;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.header-div h1{
+    margin-left: 50px;
+}
+
+.header-nav-links{
+    margin-right: 80px;
+}
+
+.header-nav-links a{
+    margin-right: 20px;
+    cursor: pointer;   
+}
+

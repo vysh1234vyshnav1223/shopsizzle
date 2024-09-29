@@ -1,0 +1,27 @@
+.carousel-item-div{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.carousel-item-div img{
+
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.carousel-item-info{
+    padding: 5px;
+    font-size: 12px;
+    width: 100%;
+    background-color: aqua;
+    height: 50px;
+    text-align: center;
+}
