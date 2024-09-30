@@ -4,15 +4,14 @@ import CarouselItem from '../CarouselItem/CarouselItem';
 
 
 
-const ExploreCarousel = ({category}) => {
+const ExploreCarousel = (props) => {
 
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch(`https://fakestoreapi.com/products/category/${category}?limit=3`)
+    fetch(`https://fakestoreapi.com/products/category/${props.category}?limit=3`)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       setItems(data);
     })
     .catch((err) => {
@@ -23,7 +22,7 @@ const ExploreCarousel = ({category}) => {
 
   return (
     <div className='explore-carousel-div'>
-        <h2>{category.slice(0,1).toUpperCase() + category.slice(1) }</h2>
+        <h2>{props.categoryName}</h2>
        <div className='items'>
         {
           items.map(item => (
@@ -31,6 +30,9 @@ const ExploreCarousel = ({category}) => {
           ))
         }
       </div>
+      <div className="cta-button">
+          <button>Explore more</button>
+        </div>
     </div>
   )
 }
