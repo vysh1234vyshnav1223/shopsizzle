@@ -1,0 +1,19 @@
+.categories-page-div{
+    padding: 20px;
+}
+
+.categories-page-div h2{
+    text-align: center;
+}
+
+.categories-items-div{
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

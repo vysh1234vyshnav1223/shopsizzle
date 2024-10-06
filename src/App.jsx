@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import HomePage from './pages/HomePage'
 import Products from './pages/Products';
 import Footer from './components/Footer/Footer';
+import Categories from './pages/CategoriesPage/Categories';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Routes>
           <Route path='/' element={<HomePage/>} />
           <Route path='/products' element={<Products/>} />
+          <Route path='/category/:categoryName' element={<Categories/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './ExploreCarousel.css';
+import { Link } from 'react-router-dom';
 import CarouselItem from '../CarouselItem/CarouselItem';
 
 
@@ -31,7 +32,7 @@ const ExploreCarousel = (props) => {
         }
       </div>
       <div className="cta-button">
-          <button>Explore more</button>
+          <button><Link to={`/category/${props.category}`}>Explore more</Link></button>
         </div>
     </div>
   )
